@@ -1,0 +1,60 @@
+·<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="tetris.js"></script>
+    <title>Tetris Game</title>
+  </head>
+  <body>
+    <header>Tetris Game</header>
+    <div class="box">
+      <canvas id="gameCanvas" width="300" height="600"></canvas>
+      <div class="box-right">
+        <audio id="bg-music" loop>
+          <source src="musicBackground.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="info-firstPart">
+          <div class="scoreBox scoreInfo">
+            <p>Your score: <span class="score">0</span></p>
+          </div>
+
+          <div class="messages">
+            <div class="message">
+              <p><span>Space</span> key for rotating clockwise</p>
+            </div>
+            <div class="message">
+              <p><span>A</span> key for rotating anti-clockwise</p>
+            </div>
+            <div class="message">
+              <p><span>Arrow</span> keys for moving</p>
+            </div>
+          </div>
+          <div class="btns-responsive hidden">
+            <button class="btn-res left">⇦</button>
+            <button class="btn-res right">⇨</button>
+            <button class="btn-res rotate">↻</button>
+            <button class="btn-res down">⇩</button>
+          </div>
+        </div>
+        <div class="btns">
+          <button class="btnPC pause">Pause</button>
+          <button class="btnPC continue">Continue</button>
+          <button class="btnPC music">Play music</button>
+          <button class="btnPC restart">Restart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
